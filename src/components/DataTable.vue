@@ -22,8 +22,8 @@
       @page-count="pageCount = $event"
     >
       <template v-slot:[`item.action`]="{ item }">
-        <v-btn @click.prevent="deleteItem(item)" v-model="item.id"
-          >Update</v-btn
+        <router-link :to="{ name: 'Update', params: { id: item.id } }"
+          ><v-btn>Update</v-btn></router-link
         >
         <v-btn @click.prevent="deleteItem(item)" v-model="item.id"
           >Delete</v-btn

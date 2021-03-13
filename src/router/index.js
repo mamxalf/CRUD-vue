@@ -3,6 +3,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import AddData from "../components/AddData.vue";
+import UpdateData from "../components/UpdateData.vue";
 
 Vue.use(VueRouter);
 
@@ -25,6 +26,11 @@ const routes = [
     path: "/add",
     name: "Add",
     component: AddData,
+  },
+  {
+    path: "/update",
+    name: "Update",
+    component: UpdateData,
   },
 ];
 
